@@ -51,7 +51,7 @@ module Mercadopago
         end
 
         # When Spree issue #5246 is fixed we can remove this line
-        payment.order.recalculator.update
+        payment.order.updater.update
       end
     end
   end

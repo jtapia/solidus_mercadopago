@@ -27,9 +27,10 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = ['>= 2.5', '< 4.0']
 
-  s.add_dependency 'rest-client'
   s.add_dependency 'solidus_core', ['>= 3.2', '< 5']
   s.add_dependency 'solidus_support', '~> 0.5'
+  s.add_dependency 'rest-client'
+  s.add_dependency 'deface'
 
   s.add_development_dependency 'solidus_backend'
   s.add_development_dependency 'solidus_frontend'
