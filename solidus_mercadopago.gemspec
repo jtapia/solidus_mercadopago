@@ -20,23 +20,20 @@ Gem::Specification.new do |s|
     end
   end
 
+  s.required_ruby_version = ['>= 2.5', '< 4.0']
+
   s.test_files = Dir['spec/**/*']
   s.bindir = 'exe'
   s.executables = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
   s.require_paths = ['lib']
 
-  s.required_ruby_version = ['>= 2.5', '< 4.0']
+  solidus_version = ['>= 3.2', '< 5']
 
-  s.add_dependency 'solidus_core', ['>= 3.2', '< 5']
-  s.add_dependency 'solidus_support', '~> 0.5'
-  s.add_dependency 'rest-client'
   s.add_dependency 'deface'
+  s.add_dependency 'rest-client'
+  s.add_dependency 'solidus_core', solidus_version
+  s.add_dependency 'solidus_support', '~> 0.5'
 
-  s.add_development_dependency 'solidus_backend'
-  s.add_development_dependency 'solidus_frontend'
-  s.add_development_dependency 'solidus_dev_support', '~> 2.5'
-  s.add_development_dependency 'rails-controller-testing'
-  s.add_development_dependency 'capybara-accessible'
-  s.add_development_dependency 'poltergeist'
-  s.add_development_dependency 'webmock'
+  s.add_development_dependency 'cuprite'
+  s.add_development_dependency 'solidus_dev_support'
 end

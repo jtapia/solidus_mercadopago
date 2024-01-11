@@ -1,14 +1,13 @@
 # frozen_string_literal: true
 
-require 'solidus_core'
-require 'solidus_support'
-require 'deface'
+require 'spree/core'
+require 'solidus_mercadopago'
 
 module SolidusMercadopago
   class Engine < Rails::Engine
     include SolidusSupport::EngineExtensions
 
-    isolate_namespace ::Spree
+    isolate_namespace SolidusMercadopago
 
     engine_name 'solidus_mercadopago'
 
