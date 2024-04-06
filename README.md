@@ -1,13 +1,13 @@
 Solidus Mercado Pago Payment Method.
 =================================
 
-[![Circle CI](https://circleci.com/gh/magma-labs/solidus_mercadopago/tree/master.svg?style=shield)](https://circleci.com/gh/magma-labs/solidus_mercadopago/tree/master)
+[![Circle CI](https://circleci.com/gh/jtapia/solidus_mercadopago/tree/master.svg?style=shield)](https://circleci.com/gh/jtapia/solidus_mercadopago/tree/master)
 
 This project is a fork from [spree version maintained by ngelx](https://github.com/ngelx/solidus_mercadopago).
 
 
 ```
-gem 'solidus_mercadopago', git: "git@github.com:magma-labs/solidus_mercadopago.git"
+gem 'solidus_mercadopago', git: "git@github.com:jtapia/solidus_mercadopago.git"
 ```
 
 You should run inside your project
